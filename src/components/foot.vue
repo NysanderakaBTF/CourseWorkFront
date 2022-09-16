@@ -13,6 +13,7 @@
         </address>
         <p>&copy; Магілёўская фабрыка шакаладу 2022<br>Разработчик и дизайнер: Григорий Резников</p>
     </footer>
+
 </template>
 
 <script>
@@ -53,6 +54,22 @@ export default{
     address::first-line{
         font-family: 'Open Sans';
         font-style: initial;
+    }
+    @media screen and (max-width: 740px) {
+        footer{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        address{
+            margin-left: 1%;
+            text-align: center;
+            text-justify: distribute;
+            margin: 0 auto;
+            margin-bottom: 4%;
+        }
+            
     }
 
 </style>

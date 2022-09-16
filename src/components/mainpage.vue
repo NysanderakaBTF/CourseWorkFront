@@ -1,6 +1,6 @@
 <template>
     <div id="#maindiv">
-        <Navbar/>
+        <!-- <Navbar/> -->
         <body id="mmp" class="vh-100">
             <div class="ourHistory">
                 <div class="text">
@@ -45,7 +45,7 @@
                     </div>
         
                     <div class="imgright">
-                        <img src="https://4tololo.ru/sites/default/files/images/20163007120451.jpg" alt="Красивый шоколад" width="400" height="300">
+                        <img src="../assets/shokolad.jpeg" alt="Красивый шоколад" width="400" height="300">
                     </div>
                     
                 
@@ -66,6 +66,7 @@ export default{
     Foot
 }
 }
+var w = window.innerWidth;
 </script>
 
 <style lang="scss">
@@ -132,5 +133,61 @@ export default{
 h3{
     text-align: center;
 }
-
+@media screen and (max-width: 1000px) {
+    #maindiv{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }  
+    .row{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .now{
+        margin: 0;
+    }
+    .imgright{
+        margin: 0;
+        justify-self: center;
+        padding: 0;
+        margin-left: 2%;
+        margin-right: 2%;
+        width: min-content;
+    }
+    .lefttext{
+        width: auto;
+        margin:2%;
+        padding: 0;
+             
+    }
+    .lefttext{
+        text-align: justify;
+    }
+}
+@media screen and (max-width: 400px) {
+    #maindiv{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }  
+    .row{
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin: 0;
+    }
+    .now{
+        margin: 0;
+    }
+    .imgright img{
+        width: 95vw;
+        height :min-content
+    }
+    .lefttext{
+        width: auto;
+        margin:2%;
+        padding: 0;
+             
+    }
+    .lefttext{
+        text-align: justify;
+    }
+}
 </style>

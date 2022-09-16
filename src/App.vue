@@ -1,6 +1,8 @@
 <template>
   <div class="App">
-    <Mainpage/>
+    <Navbar/>
+
+    <Foot/>
   </div>
 
 </template>
@@ -9,12 +11,16 @@
 import mainpage from '@/components/mainpage';
 import Navbar from './components/navbar.vue';
 import Mainpage from './components/mainpage.vue';
+import Foot from './components/foot.vue';
 
 export default{
+  name: 'App',
   components: {
     mainpage,
     Navbar,
-    Mainpage
+    Mainpage,
+    Navbar,
+    Foot
 }
 }
 </script>
