@@ -1,30 +1,31 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+  <div class="App">
+    <Mainpage/>
+  </div>
+
 </template>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+<script>
+import mainpage from '@/components/mainpage';
+import Navbar from './components/navbar.vue';
+import Mainpage from './components/mainpage.vue';
+
+export default{
+  components: {
+    mainpage,
+    Navbar,
+    Mainpage
 }
+}
+</script>
 
-nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
+<style lang="scss">
+*{
+  font-family: 'Open Sans';
+  max-width: 1500px;
+  background-color: rgb(255, 251, 247);
+  padding: 0px;
+  margin: 0 auto;
+  box-sizing: border-box;
 }
 </style>
