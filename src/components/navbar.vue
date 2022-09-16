@@ -8,36 +8,37 @@
         <nav >
             <ul class="nav mynav">
                 <li class="nav-item">
-                    <router-link class="nav-link" :to="{name :'Mainpage'}" exact-active-class = "_active"> О нас</router-link>
+                    <router-link class="nav-link" :to="{name :'Mainpage'}"> <span>О нас</span></router-link>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false">Продукция</a>
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false"> <span>Продукция</span> </a>
                     <ul class="dropdown-menu">
-                        <li> <router-link class="dropdown-item" :to="{name :'Mainpage'}" exact-active-class = "_active">Шоколадные плитки</router-link></li>
-                        <li><router-link class="dropdown-item" :to="{name :'Mainpage'}" exact-active-class = "_active">Сиропы</router-link></li>
-                        <li> <router-link class="dropdown-item" :to="{name :'Mainpage'}" exact-active-class = "_active">Другое</router-link></li>
+                        <li> <router-link class="dropdown-item" :to="{name :'Mainpage'}">Шоколадные плитки</router-link></li>
+                        <li><router-link class="dropdown-item" :to="{name :'Mainpage'}">Сиропы</router-link></li>
+                        <li> <router-link class="dropdown-item" :to="{name :'Mainpage'}">Другое</router-link></li>
                     </ul>
                 </li>
                 <li class="nav-item">
-                    <router-link class="nav-link" :to="{name :'visit'}">Посетить фабрику</router-link>
+                    <router-link class="nav-link" :to="{name :'visit'}"><span>Посетить фабрику</span> </router-link>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false">Купить наш шоколад</a>
                     <ul class="dropdown-menu">
-                        <li> <router-link class="dropdown-item" :to="{name :'Mainpage'}" exact-active-class = "_active">Онлайн</router-link></li>
-                        <li> <router-link class="dropdown-item" :to="{name :'Mainpage'}" exact-active-class = "_active">Фирменные магазины</router-link></li>
-                        <li> <router-link class="dropdown-item" :to="{name :'Mainpage'}" exact-active-class = "_active">Магазины-партнеры</router-link></li>
+                        <li> <router-link class="dropdown-item" :to="{name :'Mainpage'}">Онлайн</router-link></li>
+                        <li> <router-link class="dropdown-item" :to="{name :'Mainpage'}">Фирменные магазины</router-link></li>
+                        <li> <router-link class="dropdown-item" :to="{name :'Patner'}">Магазины-партнеры</router-link></li>
                     </ul>
                 </li>
             </ul>
         </nav>
+        <hr>
     </div>
 </template>
 
 <script>
 import Mainpage from './mainpage.vue';
 export default{
-    name: "navigation"
+    name: "navigation",
 }
 </script>
 
@@ -60,8 +61,8 @@ export default{
         display: flex;
         justify-content: space-evenly;
         img{
-            height: 11vh;
-            width: 11vh;
+            height: 8vh;
+            
         }
         align-items: center;
     }
@@ -81,6 +82,7 @@ export default{
         border-radius: 0;
     }
     .nav-link{
+        display: block;
         cursor: pointer;
         color: #4b3f2c;
         :hover{
@@ -114,23 +116,16 @@ export default{
         --bs-dropdown-link-hover-bg: rgba(62, 48, 48, 0);
         --bs-dropdown-link-active-bg:  rgba(62, 48, 48, 0);
         --bs-dropdown-link-hover-color:  #ceb997;
-        --bs-link-hover-color: var(--bs-dropdown-link-hover-color);
-        --bs-link-visited-color: var(--bs-dropdown-link-hover-color);
+        --bs-link-hover-color:  #ceb997;
+        --bs-link-visited-color:  #ceb997;
 
     }
-    nav{
+    .nav{
         font-family: "Open Sans", serif;
         text-transform: uppercase;
+        --bs-nav-link-hover-color:#ceb997;
     }
-    .nav-link{
-        display: block;
-        &:hover{
-           color: #ceb997;
-        }
-    }
-    ._active{
-        color:#ceb997
-    }
+   
 @media screen and (max-width: 800) {
     
 

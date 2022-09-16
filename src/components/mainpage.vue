@@ -44,7 +44,7 @@
                         </section>
                     </div>
         
-                    <div class="imgright">
+                    <div class="imgright" >
                         <img src="../assets/shokolad.jpeg" alt="Красивый шоколад" width="400" height="300">
                     </div>
                     
@@ -52,7 +52,7 @@
                 </div>
             </article>
         </body>
-        <Foot/>
+        <!-- <Foot/> -->
     </div>
 </template>
 
@@ -123,7 +123,14 @@ var w = window.innerWidth;
 .imgright{
     width: 30%;
     margin:0;
-    padding: 0;    
+    padding: 0;
+    overflow:hidden;
+    img:hover{
+        transform: scale(1.2);
+        transition: transform ease 0.5s;
+    }
+    transition-duration: 0.5s;
+    transition: transform ease 0.5s;
 }
 .wgood{
     text-align: center;
@@ -157,10 +164,7 @@ h3{
         width: auto;
         margin:2%;
         padding: 0;
-             
-    }
-    .lefttext{
-        text-align: justify;
+        text-align: justify;     
     }
 }
 @media screen and (max-width: 400px) {
@@ -190,4 +194,5 @@ h3{
         text-align: justify;
     }
 }
+
 </style>

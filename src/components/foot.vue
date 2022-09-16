@@ -50,6 +50,7 @@ export default{
     }
     ul{
         list-style-type: none;
+        padding: 0;
     }
     address::first-line{
         font-family: 'Open Sans';
@@ -69,7 +70,9 @@ export default{
             margin: 0 auto;
             margin-bottom: 4%;
         }
-            
+        li{
+            text-align: center;
+        }
     }
 
 </style>

@@ -1,7 +1,7 @@
 <template>
   <div class="App">
     <Navbar/>
-
+    <router-view></router-view>
     <Foot/>
   </div>
 
@@ -27,6 +27,7 @@ export default{
 
 <style lang="scss">
 *{
+
   font-family: 'Open Sans';
   max-width: 1500px;
   background-color: rgb(255, 251, 247);

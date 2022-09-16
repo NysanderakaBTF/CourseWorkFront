@@ -1,10 +1,66 @@
 <template>
     <div id="#maindiv">
-        <Navbar/>
         <body>
-            Lorem5000!
+            <div class="adv">
+                <p>
+                    Мы предлагаем Вам незабываемую экскурсиию по шоколадной фабрике с дегустацией в конце. <br><br> Есть  уникальная возможность купить <span class="gold">золотой билет</span> и услышать всё от самого директора, попробовать себя в качестве работника и сделать свою шоколадную скульптуру! <br> <br>
+                    Экскурсии на фабрику будет интересна как взрослым, так и детям. Вы сможете посетить единственный в стране музей шоколада, и перенестись в кондитерские мастерские 18 века. Ждем Вас с нетерпением!
+                </p>  
+            </div>
+                <form action="https://httpbin.org/get" method="get">
+                    <fieldset class="myform">
+                        <legend>Записаться</legend>
+                    
+                        <section class="inputLabel">
+                          <input type="text" required onkeyup="this.setAttribute('value', this.value)">
+                          <label>Имя</label>
+                        </section>
+                        <section class="inputLabel">
+                            <input type="text" required onkeyup="this.setAttribute('value', this.value)">
+                            <label>Фамилия</label>
+                          </section>
+                    
+                        <section class="inputLabel">
+                          <input type="email" onkeyup="this.setAttribute('value', this.value)">
+                          <label>Email</label>
+                        </section>
+                    
+                        <section class="inputLabel">
+                          <input type="date" onkeyup="this.setAttribute('value', this.value)">
+                          <label>Дата посещения</label>
+                        </section>
+                        
+                        <section class="inputLabel">
+                            <input type="tel" onkeyup="this.setAttribute('value', this.value)">
+                            <label>Телефон</label>
+                          </section>
+
+                        <section class="rad">
+                        <div class="rado">
+                            <input type="radio" name="radio" id="r1" checked>
+                            <label for="r1">Обычный билет - 30 бел. руб</label>
+                        </div>
+                          <div class="rado">
+                            <input type="radio" name="radio" id="r2">
+                          <label for="r2">Золотой билет - 45 бел. руб</label>
+                          </div>
+                          
+                        </section>
+                    
+
+                        <section class="inputLabel">
+                          <textarea onkeyup="this.setAttribute('value', this.value)"></textarea>
+                          <label>Пожелания</label>
+                        </section>
+                        <div class="but">
+                            <button type="submit">отправить</button>
+                            <button type="reset">сбросить</button> 
+                        </div>
+                            
+                      </fieldset>
+                </form>
+                <img src="../assets/tick.jpg" class="immm">
         </body>
-        <Foot/>
     </div>
 </template>
 
@@ -18,7 +74,7 @@ export default{
     Foot
 }
 }
-var w = window.innerWidth;
+
 </script>
 
 <style lang="scss">
@@ -26,120 +82,94 @@ var w = window.innerWidth;
         max-width: 1500px;
         margin: 0 auto;
     }
+    body{
+        display: flex;
+        flex-direction: column;
+        background-color:rgb(255, 251, 247);
+    }
     #maindiv{
         display: flex;
         flex-direction: column;
         font-family: 'Open Sans';
+
         background-color: rgb(255, 246, 237);
         color:rgb(81, 51, 46);
+        justify-content: center;
     }
-.text{
-    p{
-        background-color: transparent;
+    select,
+    input,
+    button {
+    display: block;
+    margin: 0.5em 0.5em;
+    font-size: 15px;
+    }
+    .myform{
+        width: fit-content;
+    }
+    form{
+        
+        display: flex;
+        box-sizing: border-box;
+        max-width: 1500;
+        margin: 0, auto;
+        justify-content: center;
+        section{
+            
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            
+            label{
+                margin: 0;
+                width: fit-content;
+                text-align: right;
+            }
+           
+        }
+        .rad{
+            flex-direction: column;
+            
+        }
+        .rado{
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            margin: 0;
+        }
+        button{
+            margin-left: 0;
+            margin-right: 0;
+            justify-self: center;
+        }
+    }
+    .gold{
+        color:goldenrod;
         font-weight: bolder;
-        margin-left: 10%;
-        margin-right: 10%;
     }
-    h2{background-color: transparent;text-align: center;font-weight: bolder}
-    .now{
-        margin-left: 10%;
-        margin-right: 10%;
-        font-size: large;
-        font-weight: bold;
+    p{
+        width: 80%;
+        font-size: larger;
     }
-
-    background-color: rgba(256 , 256,256,0.5);
-    backdrop-filter: blur(1px);
-    
-}
-.ourHistory{
-    background-image: url('../assets/Mahilo.jpg');
-    background-color: transparent;
-    background-size: cover;
-    
-}
-.row{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: center;
-    margin-left: 10px;
-    max-width: 1500px;
-}
-.lefttext{
-    margin:0;
-    padding: 0;
-    width: 60%;  
-
-}
-.imgright{
-    width: 30%;
-    margin:0;
-    padding: 0;    
-}
-.wgood{
-    text-align: center;
-    background-color: #603e31;
-    color: beige;
-}
-h3{
-    text-align: center;
-}
-@media screen and (max-width: 1000px) {
-    #maindiv{
-        flex-wrap: wrap;
-        flex-direction: column;
-    }  
-    .row{
-        flex-wrap: wrap;
-        flex-direction: column;
+    .but{
+        display: flex;
+        justify-content: space-between;
+        button{
+            border-color: #ac946f;
+            background-color: #beb19992;
+            font-weight: bolder;
+            border-width: 2px;
+            border-style: solid;
+        }
     }
-    .now{
-        margin: 0;
+    .immm{
+        opacity: 0.7;
+        width: 80%;
     }
-    .imgright{
-        margin: 0;
-        justify-self: center;
-        padding: 0;
-        margin-left: 2%;
-        margin-right: 2%;
-        width: min-content;
+    @media screen and (max-width: 400) {
+        form section {
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: space-between;
+        }
     }
-    .lefttext{
-        width: auto;
-        margin:2%;
-        padding: 0;
-             
-    }
-    .lefttext{
-        text-align: justify;
-    }
-}
-@media screen and (max-width: 400px) {
-    #maindiv{
-        flex-wrap: wrap;
-        flex-direction: column;
-    }  
-    .row{
-        flex-wrap: wrap;
-        flex-direction: column;
-        margin: 0;
-    }
-    .now{
-        margin: 0;
-    }
-    .imgright img{
-        width: 95vw;
-        height :min-content
-    }
-    .lefttext{
-        width: auto;
-        margin:2%;
-        padding: 0;
-             
-    }
-    .lefttext{
-        text-align: justify;
-    }
-}
 </style>
