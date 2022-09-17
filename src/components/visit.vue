@@ -113,6 +113,8 @@ export default{
         max-width: 1500;
         margin: 0, auto;
         justify-content: center;
+        border-color: #ac946f;
+        border-width: 2px;
         section{
             
             display: flex;

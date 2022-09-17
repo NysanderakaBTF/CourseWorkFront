@@ -7,11 +7,13 @@
     "build": "vue-cli-service build"
   },
   "dependencies": {
+    "@googlemaps/js-api-loader": "^1.14.3",
     "@popperjs/core": "^2.11.6",
     "bootstrap": "^5.2.1",
     "core-js": "^3.8.3",
     "vue": "^3.2.13",
     "vue-router": "^4.0.3",
+    "vue3-google-map": "^0.15.0",
     "vuex": "^4.0.0"
   },
   "devDependencies": {

@@ -12,6 +12,7 @@ import mainpage from '@/components/mainpage';
 import Navbar from './components/navbar.vue';
 import Mainpage from './components/mainpage.vue';
 import Foot from './components/foot.vue';
+import Patner from './components/partner.vue';
 
 export default{
   name: 'App',
@@ -20,7 +21,8 @@ export default{
     Navbar,
     Mainpage,
     Navbar,
-    Foot
+    Foot,
+    Patner
 }
 }
 </script>
