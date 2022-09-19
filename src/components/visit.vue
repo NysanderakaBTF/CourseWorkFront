@@ -11,26 +11,26 @@
                         <legend>Записаться</legend>
                     
                         <section class="inputLabel">
-                          <input type="text" required onkeyup="this.setAttribute('value', this.value)">
-                          <label>Имя</label>
+                          <input name="name" type="text" required onkeyup="this.setAttribute('value', this.value)">
+                          <label for="name">Имя</label>
                         </section>
                         <section class="inputLabel">
-                            <input type="text" required onkeyup="this.setAttribute('value', this.value)">
-                            <label>Фамилия</label>
+                            <input name="surname" type="text" required onkeyup="this.setAttribute('value', this.value)">
+                            <label for="surname">Фамилия</label>
                           </section>
                     
                         <section class="inputLabel">
-                          <input type="email" onkeyup="this.setAttribute('value', this.value)">
-                          <label>Email</label>
+                          <input name="email" type="email" onkeyup="this.setAttribute('value', this.value)">
+                          <label for="email">Email</label>
                         </section>
                     
                         <section class="inputLabel">
-                          <input type="date" onkeyup="this.setAttribute('value', this.value)">
-                          <label>Дата посещения</label>
+                          <input name="date" type="date" onkeyup="this.setAttribute('value', this.value)">
+                          <label for="date" >Дата посещения</label>
                         </section>
                         
                         <section class="inputLabel">
-                            <input type="tel" onkeyup="this.setAttribute('value', this.value)">
+                            <input name="phone" type="tel" onkeyup="this.setAttribute('value', this.value)">
                             <label>Телефон</label>
                           </section>
 
@@ -48,8 +48,8 @@
                     
 
                         <section class="inputLabel">
-                          <textarea onkeyup="this.setAttribute('value', this.value)"></textarea>
-                          <label>Пожелания</label>
+                          <textarea name="suggestions" onkeyup="this.setAttribute('value', this.value)"></textarea>
+                          <label for="suggestions" >Пожелания</label>
                         </section>
                         <div class="but">
                             <button type="submit">отправить</button>
