@@ -33,6 +33,8 @@ export default{
         background-color: #603e31;
         color: beige;
         font-weight: 600;
+        padding-top: 10px;
+        width: 100vw;
     }
     footer p{
         width: 100%;
@@ -50,7 +52,8 @@ export default{
     }
     ul{
         list-style-type: none;
-        padding: 0;
+        padding: 0
+        ;
     }
     address::first-line{
         font-family: 'Open Sans';

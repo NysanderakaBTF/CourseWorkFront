@@ -8,7 +8,6 @@
 </template>
 
 <script>
-import mainpage from '@/components/mainpage';
 import Navbar from './components/navbar.vue';
 import Mainpage from './components/mainpage.vue';
 import Foot from './components/foot.vue';
@@ -17,8 +16,6 @@ import Patner from './components/partner.vue';
 export default{
   name: 'App',
   components: {
-    mainpage,
-    Navbar,
     Mainpage,
     Navbar,
     Foot,
@@ -31,10 +28,13 @@ export default{
 *{
 
   font-family: 'Open Sans';
-  max-width: 1500px;
-  background-color: rgb(255, 251, 247);
+ // max-width: 1500px;
+  //background-color: rgb(255, 251, 247);
   padding: 0px;
   margin: 0 auto;
   box-sizing: border-box;
+}
+body{
+  background-color: rgb(255, 251, 247);
 }
 </style>

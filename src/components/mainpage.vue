@@ -71,7 +71,7 @@ var w = window.innerWidth;
 
 <style lang="scss">
     *{
-        max-width: 1500px;
+       // max-width: 1500px;
         margin: 0 auto;
     }
     #maindiv{
@@ -104,7 +104,7 @@ var w = window.innerWidth;
     background-image: url('../assets/Mahilo.jpg');
     background-color: transparent;
     background-size: cover;
-    
+
 }
 .row{
     display: flex;
@@ -113,6 +113,7 @@ var w = window.innerWidth;
     align-items: center;
     margin-left: 10px;
     max-width: 1500px;
+    background-color: rgb(255, 251, 247);
 }
 .lefttext{
     margin:0;

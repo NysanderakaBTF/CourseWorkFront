@@ -1,6 +1,5 @@
 <template>
     <div id="#maindiv">
-        <body>
             <div class="adv">
                 <p>
                     Мы предлагаем Вам незабываемую экскурсиию по шоколадной фабрике с дегустацией в конце. <br><br> Есть  уникальная возможность купить <span class="gold">золотой билет</span> и услышать всё от самого директора, попробовать себя в качестве работника и сделать свою шоколадную скульптуру! <br> <br>
@@ -59,8 +58,9 @@
                             
                       </fieldset>
                 </form>
-                <img src="../assets/tick.jpg" class="immm">
-        </body>
+            <div class="im">
+                 <img src="../assets/tick.jpg" class="immm">
+            </div>
     </div>
 </template>
 
@@ -78,23 +78,15 @@ export default{
 </script>
 
 <style lang="scss">
-    *{
-        max-width: 1500px;
-        margin: 0 auto;
-    }
-    body{
-        display: flex;
-        flex-direction: column;
-        background-color:rgb(255, 251, 247);
-    }
     #maindiv{
+      justify-content: center;
         display: flex;
         flex-direction: column;
         font-family: 'Open Sans';
 
-        background-color: rgb(255, 246, 237);
+        background-color:rgb(255, 251, 247);
         color:rgb(81, 51, 46);
-        justify-content: center;
+      justify-content: center;
     }
     select,
     input,
@@ -110,8 +102,8 @@ export default{
         
         display: flex;
         box-sizing: border-box;
-        max-width: 1500;
-        margin: 0, auto;
+        max-width: 1500px;
+        margin: 0 auto;
         justify-content: center;
         border-color: #ac946f;
         border-width: 2px;
@@ -166,8 +158,12 @@ export default{
     .immm{
         opacity: 0.7;
         width: 80%;
+        justify-self: center;
     }
-    @media screen and (max-width: 400) {
+    .im{
+      display: flex;
+    }
+    @media screen and (max-width: 400px) {
         form section {
             display: flex;
             flex-direction: column-reverse;

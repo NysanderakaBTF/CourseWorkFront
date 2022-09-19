@@ -13,10 +13,11 @@
     "core-js": "^3.8.3",
     "vue": "^3.2.13",
     "vue-router": "^4.0.3",
-    "vue3-google-map": "^0.15.0",
+    "vue-yandex-maps": "^0.11.13",
     "vuex": "^4.0.0"
   },
   "devDependencies": {
+    "@vue-leaflet/vue-leaflet": "^0.6.1",
     "@vue/cli-plugin-babel": "~5.0.0",
     "@vue/cli-plugin-router": "~5.0.0",
     "@vue/cli-plugin-vuex": "~5.0.0",
