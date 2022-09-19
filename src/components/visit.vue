@@ -1,5 +1,5 @@
 <template>
-    <div id="#maindiv">
+    <div id="#maindiv" class="content">
             <div class="adv">
                 <p>
                     Мы предлагаем Вам незабываемую экскурсиию по шоколадной фабрике с дегустацией в конце. <br><br> Есть  уникальная возможность купить <span class="gold">золотой билет</span> и услышать всё от самого директора, попробовать себя в качестве работника и сделать свою шоколадную скульптуру! <br> <br>
@@ -78,6 +78,9 @@ export default{
 </script>
 
 <style lang="scss">
+    .content{
+        max-width: 1500px;
+    }
     #maindiv{
       justify-content: center;
         display: flex;
@@ -162,6 +165,7 @@ export default{
     }
     .im{
       display: flex;
+      max-width: 400px;
     }
     @media screen and (max-width: 400px) {
         form section {

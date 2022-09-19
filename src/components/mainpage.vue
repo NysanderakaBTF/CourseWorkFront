@@ -2,7 +2,7 @@
     <div id="#maindiv">
         <!-- <Navbar/> -->
         <body id="mmp" class="vh-100">
-            <div class="ourHistory">
+            <div class="ourHistory content">
                 <div class="text">
                     <h2>История фабрики</h2>
                 <p >Город Могилев в Беларуси славится производством шоколада. Он также известен как город романтики и восточного декаданса. Город был основан в 13 веке.
@@ -19,9 +19,9 @@
             </div>
             <article>
                 <h2 class="wgood">Почему шоколад полезен?</h2>
-                <div class="row">
+                <div class="row content">
                 
-                    <div class="lefttext">
+                    <div class="lefttext content">
                         
                         <section>
                             <h3>Из чего шоколад делается</h3>
@@ -44,7 +44,7 @@
                         </section>
                     </div>
         
-                    <div class="imgright" >
+                    <div class="imgright content" >
                         <img src="../assets/shokolad.jpeg" alt="Красивый шоколад" width="400" height="300">
                     </div>
                     
@@ -73,6 +73,9 @@ var w = window.innerWidth;
     *{
        // max-width: 1500px;
         margin: 0 auto;
+    }
+    .content{
+        max-width: 1500px;
     }
     #maindiv{
         display: flex;
@@ -114,6 +117,7 @@ var w = window.innerWidth;
     margin-left: 10px;
     max-width: 1500px;
     background-color: rgb(255, 251, 247);
+    margin: 0 auto;
 }
 .lefttext{
     margin:0;

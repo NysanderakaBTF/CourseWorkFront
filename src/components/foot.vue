@@ -1,17 +1,18 @@
 <template>
     <footer>
-        <nav>
+            <nav>
             <ul >
                 <li> <a href="#">Наверх</a></li>
                 <li><a href="mailto:factory@example.by">Наша почта</a> </li>
                 <li> <a href="tel:+375222222222">По вопросам сотрудничества</a></li>
             </ul> 
-        </nav>
-        <address id="contact">
-            Мы находимся по адресу:<br> 
-            Республика Беларусь, город Могилев, Минское шоссе, д59
-        </address>
-        <p>&copy; Магілёўская фабрыка шакаладу 2022<br>Разработчик и дизайнер: Григорий Резников</p>
+            </nav>
+            <address id="contact">
+                Мы находимся по адресу:<br> 
+                Республика Беларусь, город Могилев, Минское шоссе, д59
+            </address>
+            <p>&copy; Магілёўская фабрыка шакаладу 2022<br>Разработчик и дизайнер: Григорий Резников</p>
+
     </footer>
 
 </template>
@@ -25,6 +26,7 @@ export default{
 <style lang="scss">
     @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap');
+    
     footer{
         display: flex;
         flex-direction: row;
@@ -52,8 +54,9 @@ export default{
     }
     ul{
         list-style-type: none;
-        padding: 0
-        ;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
     }
     address::first-line{
         font-family: 'Open Sans';
