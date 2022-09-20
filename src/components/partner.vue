@@ -66,7 +66,6 @@
           </l-popup>
         </l-marker>
         
-        
       </l-map>
   </div>
 
@@ -109,14 +108,6 @@ export default {
       iconWidth: 25,
       iconHeight: 40,
     };
-  },
-  computed: {
-    iconUrl() {
-      return `https://placekitten.com/${this.iconWidth}/${this.iconHeight}`;
-    },
-    iconSize() {
-      return [this.iconWidth, this.iconHeight];
-    },
   },
   methods: {
     log(a) {

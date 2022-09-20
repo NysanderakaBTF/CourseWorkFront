@@ -89,7 +89,7 @@
     padding: 0 16px;
     height: 100%;
     width: 100%;
-    position: absolute;
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -108,7 +108,7 @@
       border-radius: 50%;
       width: 40px;
       height: 40px;
-      background-color: #747469;
+      background-color:  #603e31;
       color: #fff;
     }
   }
@@ -129,7 +129,13 @@
       box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
     }
     .active {
-      background-color: #747469;
+      background-color:  #603e31;
     }
+  }
+  .carousel{
+    max-width: 667px;
+    max-height: 400px;
+    box-sizing: border-box;
+    overflow: hidden;
   }
   </style>
