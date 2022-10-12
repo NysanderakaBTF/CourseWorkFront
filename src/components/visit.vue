@@ -11,16 +11,16 @@
                         <legend>Записаться</legend>
                     
                         <section class="inputLabel">
-                          <input name="name" type="text" required onkeyup="this.setAttribute('value', this.value)">
+                          <input name="name" type="text" placeholder="Имя" required onkeyup="this.setAttribute('value', this.value)">
                           <label for="name">Имя</label>
                         </section>
                         <section class="inputLabel">
-                            <input name="surname" type="text" required onkeyup="this.setAttribute('value', this.value)">
+                            <input name="surname" type="text" placeholder="Фамимлия" required onkeyup="this.setAttribute('value', this.value)">
                             <label for="surname">Фамилия</label>
                           </section>
                     
                         <section class="inputLabel">
-                          <input name="email" type="email" onkeyup="this.setAttribute('value', this.value)">
+                          <input name="email" type="email" placeholder="example@email.com" onkeyup="this.setAttribute('value', this.value)">
                           <label for="email">Email</label>
                         </section>
                     

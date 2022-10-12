@@ -35,7 +35,7 @@
       const autoPlayEnabled = ref(
         props.startAutoPlay === undefined ? true : props.startAutoPlay
       );
-      const timeoutDuration = ref(props.timeout === undefined ? 5000 : props.timeout);
+      const timeoutDuration = ref(props.timeout === undefined ? 1000 : props.timeout);
       const pagintationEnabled = ref(
         props.pagination === undefined ? true : props.pagination
       );
@@ -93,6 +93,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 1;
     .toggle-page {
       display: flex;
       flex: 1;

@@ -1,7 +1,9 @@
 <template>
   <div class="App">
     <Navbar/>
-    <router-view></router-view>
+    <div class="haha">
+      <router-view></router-view>
+    </div>
     <Foot/>
   </div>
 
@@ -36,5 +38,8 @@ export default{
 }
 body{
   background-color: rgb(255, 251, 247);
+}
+.haha{
+  min-height: 100%;
 }
 </style>

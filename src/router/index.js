@@ -4,6 +4,8 @@ import visit from '../components/visit.vue'
 import App from '../App.vue'
 import Patner from '../components/partner.vue'
 import flagman from '../components/flagman.vue'
+import catalogue from '../components/catalogue.vue'
+import cart from '../components/cart.vue'
 const routes = [
   {
     path: '/components/mainpage.vue',
@@ -26,7 +28,16 @@ const routes = [
     name: 'flagman',
     component: flagman
   },
-
+  {
+    path: '/components/catalogue.vue',
+    name: 'catalogue',
+    component: catalogue
+  },
+  {
+    path: '/components/cart.vue',
+    name: 'cart',
+    component: cart
+  }
 ]
 
 const router = createRouter({

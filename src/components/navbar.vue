@@ -21,7 +21,7 @@
                         <li class="nav-item dropdown" >
                             <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false">Купить наш шоколад</a>
                             <ul class="dropdown-menu" style="margin-top: 35px;">
-                                <li> <router-link class="dropdown-item" :to="{name :'Mainpage'}">Онлайн</router-link></li>
+                                <li> <router-link class="dropdown-item" :to="{name :'catalogue'}">Онлайн</router-link></li>
                                 <li> <router-link class="dropdown-item" :to="{name :'flagman'}">Фирменный магазин</router-link></li>
                                 <li> <router-link class="dropdown-item" :to="{name :'Patner'}">Магазины-партнеры</router-link></li>
                             </ul>
@@ -48,7 +48,7 @@
                 <a class="navbar__menuitem" role="menuitem"
                 :class="{'navbar__menuitem--toggled': isOpenBurger}"><router-link class="dropdown-item" @click="this.isOpenBurger = false" :to="{name :'flagman'}">Фирменный магазин</router-link></a>
                 <a class="navbar__menuitem" role="menuitem"
-                :class="{'navbar__menuitem--toggled': isOpenBurger}"><router-link class="dropdown-item" @click="this.isOpenBurger = false" :to="{name :'Mainpage'}">Онлайн магазин</router-link></a>
+                :class="{'navbar__menuitem--toggled': isOpenBurger}"><router-link class="dropdown-item" @click="this.isOpenBurger = false" :to="{name :'catalogue'}">Онлайн магазин</router-link></a>
                 <hr>
                 <a class="navbar__menuitem" role="menuitem"
                 :class="{'navbar__menuitem--toggled': isOpenBurger}"><router-link class="nav-link" :to="{name :'visit'}" @click="this.isOpenBurger = false"><span>Посетить фабрику</span> </router-link></a>
