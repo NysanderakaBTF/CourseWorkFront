@@ -31,27 +31,27 @@
             </div>
             <div class="content_nav">
                 
-                <button class="navbar__hamburger" :class="{'navbar__hamburger--toggled': isOpenBurger}"
+                <button class="ham" :class="{'ham--toggled': isOpenBurger}"
                 @click="this.isOpenBurger = !this.isOpenBurger" aria-label="menu" aria-controls="navigation">
-                <span class="navbar__hamburger-top" :class="{'navbar__hamburger-top--toggled': isOpenBurger}"></span>
-                <span class="navbar__hamburger-middle"
-                :class="{'navbar__hamburger-middle--toggled': isOpenBurger}"></span>
-                <span class="navbar__hamburger-bottom"
-                :class="{'navbar__hamburger-bottom--toggled': isOpenBurger}"></span>
+                <span class="ham-top" :class="{'ham-top--toggled': isOpenBurger}"></span>
+                <span class="ham-middle"
+                :class="{'ham-middle--toggled': isOpenBurger}"></span>
+                <span class="ham-bottom"
+                :class="{'ham-bottom--toggled': isOpenBurger}"></span>
                 </button>
                 <transition name="hidden-navbar">
                 <div :class="{'navbar__categories': isOpenBurger, 'navbar__categories__hidden': !isOpenBurger}">
-                <a class="navbar__menuitem" role="menuitem" :class="{'navbar__menuitem--toggled': isOpenBurger}"><router-link  @click="this.isOpenBurger = false" class="nav-link" :to="{name :'Mainpage'}"> <span>О нас</span></router-link></a>
+                <a class="menuitemham" role="menuitem" :class="{'menuitemham--toggled': isOpenBurger}"><router-link  @click="this.isOpenBurger = false" class="nav-link" :to="{name :'Mainpage'}"> <span>О нас</span></router-link></a>
                 <hr>
-                <a class="navbar__menuitem" role="menuitem"
-                :class="{'navbar__menuitem--toggled': isOpenBurger}"><router-link class="dropdown-item" @click="this.isOpenBurger = false" :to="{name :'Patner'}">Магазины-партнеры</router-link></a>
-                <a class="navbar__menuitem" role="menuitem"
-                :class="{'navbar__menuitem--toggled': isOpenBurger}"><router-link class="dropdown-item" @click="this.isOpenBurger = false" :to="{name :'flagman'}">Фирменный магазин</router-link></a>
-                <a class="navbar__menuitem" role="menuitem"
-                :class="{'navbar__menuitem--toggled': isOpenBurger}"><router-link class="dropdown-item" @click="this.isOpenBurger = false" :to="{name :'catalogue'}">Онлайн магазин</router-link></a>
+                <a class="menuitemham" role="menuitem"
+                :class="{'menuitemham--toggled': isOpenBurger}"><router-link class="dropdown-item" @click="this.isOpenBurger = false" :to="{name :'Patner'}">Магазины-партнеры</router-link></a>
+                <a class="menuitemham" role="menuitem"
+                :class="{'menuitemham--toggled': isOpenBurger}"><router-link class="dropdown-item" @click="this.isOpenBurger = false" :to="{name :'flagman'}">Фирменный магазин</router-link></a>
+                <a class="menuitemham" role="menuitem"
+                :class="{'menuitemham--toggled': isOpenBurger}"><router-link class="dropdown-item" @click="this.isOpenBurger = false" :to="{name :'catalogue'}">Онлайн магазин</router-link></a>
                 <hr>
-                <a class="navbar__menuitem" role="menuitem"
-                :class="{'navbar__menuitem--toggled': isOpenBurger}"><router-link class="nav-link" :to="{name :'visit'}" @click="this.isOpenBurger = false"><span>Посетить фабрику</span> </router-link></a>
+                <a class="menuitemham" role="menuitem"
+                :class="{'menuitemham--toggled': isOpenBurger}"><router-link class="nav-link" :to="{name :'visit'}" @click="this.isOpenBurger = false"><span>Посетить фабрику</span> </router-link></a>
                 
             </div>
           </transition>
@@ -193,7 +193,7 @@ export default{
     width: 100%;
     margin: 0 auto;
    }
-    .navbar__hamburger {
+    .ham {
         display: block;
         margin: 0 auto;
         margin-top: 20px;
@@ -208,9 +208,9 @@ export default{
         margin-bottom: 20px;
         
     }
-    .navbar__hamburger-top,
-  .navbar__hamburger-middle,
-  .navbar__hamburger-bottom {
+    .ham-top,
+  .ham-middle,
+  .ham-bottom {
     display: block;
     width: 20px;
     height: .2em;
@@ -219,36 +219,36 @@ export default{
     border-radius: .05em;
     background: #4b3f2c;
   }
-  .navbar__hamburger-top,
-  .navbar__hamburger-bottom {
+  .ham-top,
+  .ham-bottom {
     content: '';
   }
-  .navbar__hamburger-top--toggled {
+  .ham-top--toggled {
     transform: translateY(.4em) rotate(135deg);
   }
-  .navbar__hamburger-middle--toggled {
+  .ham-middle--toggled {
     transform: scale(0);
   }
-  .navbar__hamburger-bottom--toggled {
+  .ham-bottom--toggled {
     transform: translateY(-.4em) rotate(-135deg);
   }
   .navbar__logo,
-  .navbar__menuitem {
+  .menuitemham {
     padding: 15px 15px 15px 0px;
     border-left: 5px solid transparent;
     color: #4b3f2c;
     text-decoration: none;
     font-size: 17px;
   }
-  .navbar__menuitem {
+  .menuitemham {
     display: none;
   }
-  .navbar__menuitem--toggled {
+  .menuitemham--toggled {
    // background-color:#ceb997;
     background-color: rgb(255, 246, 237);
     display: block;
   }
-  .navbar__menuitem:hover {
+  .menuitemham:hover {
     color: #ceb997;
   }
       .hidden-navbar-enter-active, .hidden-navbar-leave-active {
@@ -268,16 +268,16 @@ export default{
         display: none;
       }
       @media (min-width: 600px) {
-        .navbar__menuitem {
+        .menuitemham {
           display: inline-block;
           //background-color: #2196F3;
         }
-        .navbar__menuitem:hover {
+        .menuitemham:hover {
           background-color: #2196F3;
           box-shadow: inset 0 -5px 0 0 #FFF;
           border-left-color: transparent;
         }
-        .navbar__hamburger {
+        .ham {
           display: none;
         }
       }

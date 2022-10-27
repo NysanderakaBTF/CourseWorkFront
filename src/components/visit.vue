@@ -5,7 +5,8 @@
                     Мы предлагаем Вам незабываемую экскурсиию по шоколадной фабрике с дегустацией в конце. <br><br> Есть  уникальная возможность купить <span class="gold">золотой билет</span> и услышать всё от самого директора, попробовать себя в качестве работника и сделать свою шоколадную скульптуру! <br> <br>
                     Экскурсии на фабрику будет интересна как взрослым, так и детям. Вы сможете посетить единственный в стране музей шоколада, и перенестись в кондитерские мастерские 18 века. Ждем Вас с нетерпением!
                 </p>  
-            </div>
+            </div >
+            <div class="container">
                 <form action="https://httpbin.org/get" method="get">
                     <fieldset class="myform">
                         <legend>Записаться</legend>
@@ -58,6 +59,8 @@
                             
                       </fieldset>
                 </form>
+            </div>
+                
             <div class="im">
                  <img src="../assets/tick.jpg" class="immm">
             </div>
@@ -173,5 +176,45 @@ export default{
             flex-direction: column-reverse;
             justify-content: space-between;
         }
+    }
+    .container{
+        position: relative;
+        padding: 50px;
+        max-width: 450px;
+        margin-bottom: 40px;
+        min-height: 380px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(5px);
+        border-radius: 10px;
+        box-shadow: 0 25px 45px rgba(0, 0, 0, 0.2);
+    }
+    .container::after {
+        content: '';
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        bottom: 5px;
+        left: 5px;
+        border-radius: 5px;
+        pointer-events: none;
+        background: rgba(255, 255, 255, 0.1);
+    }
+    input {
+        outline: none;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 15px;
+        color: rgb(0, 0, 0);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    }
+    
+    .container input:hover,.container input:focus  {
+        background: linear-gradient(115deg,
+        rgba(0, 0, 0, 0.10),
+        rgba(255, 255, 255, 0.25));
+        transition: .5s;
     }
 </style>
