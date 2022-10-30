@@ -13,7 +13,7 @@
   <style lang="scss">
   .slide-enter-active,
   .slide-leave-active {
-    transition: opacity 0.9s ease-in-out;
+    transition: opacity 0.9s;
   }
   .slide-enter-from,
   .slide-leave-to {

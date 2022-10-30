@@ -11,17 +11,13 @@
 
 <script>
 import Navbar from './components/navbar.vue';
-import Mainpage from './components/mainpage.vue';
 import Foot from './components/foot.vue';
-import Patner from './components/partner.vue';
 
 export default{
   name: 'App',
   components: {
-    Mainpage,
     Navbar,
     Foot,
-    Patner
 }
 }
 </script>

@@ -1,7 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Mainpage from '../components/mainpage.vue'
 import visit from '../components/visit.vue'
-import App from '../App.vue'
 import Patner from '../components/partner.vue'
 import flagman from '../components/flagman.vue'
 import catalogue from '../components/catalogue.vue'

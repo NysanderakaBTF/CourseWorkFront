@@ -6,4 +6,3 @@ import store from './store'
 
 createApp(App).use(store).use(router).mount('#app')
 
-import "bootstrap/dist/js/bootstrap.js"

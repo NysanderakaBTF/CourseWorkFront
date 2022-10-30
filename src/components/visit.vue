@@ -6,32 +6,32 @@
                     Экскурсии на фабрику будет интересна как взрослым, так и детям. Вы сможете посетить единственный в стране музей шоколада, и перенестись в кондитерские мастерские 18 века. Ждем Вас с нетерпением!
                 </p>  
             </div >
-            <div class="container">
+            <div class="containerr">
                 <form action="https://httpbin.org/get" method="get">
                     <fieldset class="myform">
                         <legend>Записаться</legend>
                     
                         <section class="inputLabel">
-                          <input name="name" type="text" placeholder="Имя" required onkeyup="this.setAttribute('value', this.value)">
+                          <input name="name" type="text" placeholder="Имя" required >
                           <label for="name">Имя</label>
                         </section>
                         <section class="inputLabel">
-                            <input name="surname" type="text" placeholder="Фамимлия" required onkeyup="this.setAttribute('value', this.value)">
+                            <input name="surname" type="text" placeholder="Фамимлия" required >
                             <label for="surname">Фамилия</label>
                           </section>
                     
                         <section class="inputLabel">
-                          <input name="email" type="email" placeholder="example@email.com" onkeyup="this.setAttribute('value', this.value)">
+                          <input name="email" type="email" placeholder="example@email.com" >
                           <label for="email">Email</label>
                         </section>
                     
                         <section class="inputLabel">
-                          <input name="date" type="date" onkeyup="this.setAttribute('value', this.value)">
+                          <input name="date" type="date">
                           <label for="date" >Дата посещения</label>
                         </section>
                         
                         <section class="inputLabel">
-                            <input name="phone" type="tel" onkeyup="this.setAttribute('value', this.value)">
+                            <input name="phone" type="tel">
                             <label>Телефон</label>
                           </section>
 
@@ -49,7 +49,7 @@
                     
 
                         <section class="inputLabel">
-                          <textarea name="suggestions" onkeyup="this.setAttribute('value', this.value)"></textarea>
+                          <textarea name="suggestions"></textarea>
                           <label for="suggestions" >Пожелания</label>
                         </section>
                         <div class="but">
@@ -154,8 +154,9 @@ export default{
         display: flex;
         justify-content: space-between;
         button{
+            border-radius: 10px;
             border-color: #ac946f;
-            background-color: #beb19992;
+            background-color: #dfd7c8;
             font-weight: bolder;
             border-width: 2px;
             border-style: solid;
@@ -177,7 +178,7 @@ export default{
             justify-content: space-between;
         }
     }
-    .container{
+    .containerr{
         position: relative;
         padding: 50px;
         max-width: 450px;
@@ -191,7 +192,7 @@ export default{
         border-radius: 10px;
         box-shadow: 0 25px 45px rgba(0, 0, 0, 0.2);
     }
-    .container::after {
+    .containerr::after {
         content: '';
         position: absolute;
         top: 5px;
@@ -211,7 +212,7 @@ export default{
         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
     }
     
-    .container input:hover,.container input:focus  {
+    .containerr input:hover,.container input:focus  {
         background: linear-gradient(115deg,
         rgba(0, 0, 0, 0.10),
         rgba(255, 255, 255, 0.25));
