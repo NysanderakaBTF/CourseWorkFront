@@ -47,7 +47,7 @@
             </div>
           </div>
           <div class="priducrGridp">
-            <productCard v-for="i in (1, 2, 3 ,4, 5, 6 ,7 ,8 ,9 ,10 ,11 ,12)" :key="i" class="product__grid"/>
+            <productCard v-for="i in (1, 2, 3 ,4, 5, 6 ,7 ,8 ,9 ,10 ,11 ,12)" :key="i" class="product__grid card"/>
           </div>
         </div>
       </div>
@@ -55,15 +55,17 @@
   
   <script>
   import productCard from "@/components/productCard";
-  
+
   export default {
     name: "catalogue",
     components: {productCard},
     methods: {
         send() {
             console.log('I must send selected items');
-        }
-    },
+        },
+        
+    }
+    
   }
   </script>
   
@@ -162,13 +164,27 @@
       color: #999999;
     }
   }
-  
+
   .priducrGridp {
     display: flex;
     flex-wrap: wrap;
     margin-left: 10px;
     justify-content: space-between;
+    &:hover .card{
+        opacity: 0.5;
+        filter: blur(5px);
+        scale: 0.9;
+    }
+    .card:hover{
+      opacity: 1;
+      filter: blur(0);
+      scale: 1.1;
+    }
+    .card:hover::before{
+      opacity: 1;
+    }
   }
+  
   
   .products-catalog__title {
     display: flex;
@@ -253,4 +269,13 @@
         margin: 1% auto;
       }
   }
+  @keyframes lines {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
   </style>
